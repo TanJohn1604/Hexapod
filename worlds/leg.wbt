@@ -1,0 +1,992 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.00043715919265168937 0.9999993198442839 0.0010812968186097699 0.660756018526688
+  position -1.3269886285702757 0.013881659460250382 0.7331680861624228
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.08 0 -0.02
+  floorSize 2 2
+}
+Robot {
+  translation -0.600001 -0.00826974 -0.0626194
+  children [
+    DEF L0 Pose {
+      translation 0.1 0.05 0.1
+      rotation 0 0 1 1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            position 9.465282633347758e-06
+            axis 0 0 1
+          }
+          device [
+            RotationalMotor {
+              name "L0_0"
+              maxTorque 50
+            }
+          ]
+          endPoint Solid {
+            translation -1.5202091687724185e-17 1.3991243361465696e-13 -4.704136741390249e-07
+            rotation -2.645318037986967e-08 0.005615304136507678 0.9999842340554445 9.424934391794619e-06
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position -0.7854030429063188
+                  axis 0 1 0
+                  anchor 0.04 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "L0_1"
+                    maxTorque 50
+                  }
+                ]
+                endPoint Solid {
+                  translation 0.06828413428272459 0 0.028284408211536265
+                  rotation 0 -1 0 0.7854030429063187
+                  children [
+                    DEF L0_Joint1 Pose {
+                      translation 0.04 0 0
+                      rotation 1 0 0 -1.5707996938995747
+                      children [
+                        Shape {
+                          appearance Appearance {
+                            material Material {
+                            }
+                          }
+                          geometry Cylinder {
+                            height 0.015
+                            radius 0.01
+                          }
+                        }
+                      ]
+                    }
+                    HingeJoint {
+                      jointParameters HingeJointParameters {
+                        position 2.094390011214947
+                        axis 0 1 0
+                        anchor 0.04 0 0
+                      }
+                      device [
+                        RotationalMotor {
+                          name "L0_2"
+                          maxTorque 50
+                        }
+                      ]
+                      endPoint Solid {
+                        translation 0.010000264622152498 0 -0.051961677005838876
+                        rotation 0 1 0 2.094390011214947
+                        children [
+                          DEF L0_Link2 Shape {
+                            appearance Appearance {
+                              material Material {
+                                diffuseColor 0.333333 0.333333 0.498039
+                              }
+                            }
+                            geometry Box {
+                              size 0.12 0.01 0.01
+                            }
+                          }
+                        ]
+                        boundingObject USE L0_Link2
+                        physics Physics {
+                          density -1
+                          mass 1
+                        }
+                      }
+                    }
+                    DEF L0_Link1 Shape {
+                      appearance Appearance {
+                        material Material {
+                        }
+                      }
+                      geometry Box {
+                        size 0.08 0.01 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE L0_Link1
+                  physics Physics {
+                    density -1
+                    mass 1
+                  }
+                }
+              }
+              DEF L0_Joint1 Pose {
+                translation 0.04 0 0
+                rotation 1 0 0 -1.5708003061004252
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Cylinder {
+                      height 0.015
+                      radius 0.01
+                    }
+                  }
+                ]
+              }
+              DEF L0_Link0 Pose {
+                translation 0.02 0 0
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.04 0.01 0.01
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(1)"
+            boundingObject USE L0_Link0
+            physics Physics {
+              density -1
+              mass 1
+            }
+          }
+        }
+        DEF L0_Joint0 Pose {
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.01
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF L1 Pose {
+      translation 0 0.05 0.1
+      rotation 0 0 1 1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            position 2.1576459264179433e-06
+            axis 0 0 1
+          }
+          device [
+            RotationalMotor {
+              name "L1_0"
+              maxTorque 50
+            }
+          ]
+          endPoint Solid {
+            translation 2.2585245068461304e-05 -9.152481249784925e-11 2.5689371242337785e-05
+            rotation -2.1982769024913084e-06 -0.9346130754379415 -0.35566613447951456 5.011045827147769e-06
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position -0.7854029603599698
+                  axis 0 1 0
+                  anchor 0.04 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "L1_1"
+                    maxTorque 50
+                  }
+                ]
+                endPoint Solid {
+                  translation 0.06828415907648279 0 0.028284383417976615
+                  rotation 0 -1 0 0.78540296035997
+                  children [
+                    DEF L1_Joint1 Pose {
+                      translation 0.04 0 0
+                      rotation 1 0 0 -1.5707996938995747
+                      children [
+                        Shape {
+                          appearance Appearance {
+                            material Material {
+                            }
+                          }
+                          geometry Cylinder {
+                            height 0.015
+                            radius 0.01
+                          }
+                        }
+                      ]
+                    }
+                    HingeJoint {
+                      jointParameters HingeJointParameters {
+                        position 2.0943900890123777
+                        axis 0 1 0
+                        anchor 0.04 0 0
+                      }
+                      device [
+                        RotationalMotor {
+                          name "L1_2"
+                          maxTorque 50
+                        }
+                      ]
+                      endPoint Solid {
+                        translation 0.010000259672988263 0 -0.05196167414847089
+                        rotation 0 0.9999999999999999 0 2.0943900890123777
+                        children [
+                          DEF L1_Link2 Shape {
+                            appearance Appearance {
+                              material Material {
+                                diffuseColor 0 1 1
+                              }
+                            }
+                            geometry Box {
+                              size 0.12 0.01 0.01
+                            }
+                          }
+                        ]
+                        boundingObject USE L1_Link2
+                        physics Physics {
+                          density -1
+                          mass 1
+                        }
+                      }
+                    }
+                    DEF L1_Link1 Shape {
+                      appearance Appearance {
+                        material Material {
+                        }
+                      }
+                      geometry Box {
+                        size 0.08 0.01 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE L1_Link1
+                  physics Physics {
+                    density -1
+                    mass 1
+                  }
+                }
+              }
+              DEF L1_Joint1 Pose {
+                translation 0.04 0 0
+                rotation 1 0 0 -1.5708003061004252
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Cylinder {
+                      height 0.015
+                      radius 0.01
+                    }
+                  }
+                ]
+              }
+              DEF L1_Link0 Pose {
+                translation 0.02 0 0
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.04 0.01 0.01
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(2)"
+            boundingObject USE L1_Link0
+            physics Physics {
+              density -1
+              mass 1
+            }
+          }
+        }
+        DEF L1_Joint0 Pose {
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.01
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF L2 Pose {
+      translation -0.1 0.05 0.1
+      rotation 0 0 1 1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            position 9.463348882675592e-06
+            axis 0 0 1
+          }
+          device [
+            RotationalMotor {
+              name "L2_0"
+              maxTorque 50
+            }
+          ]
+          endPoint Solid {
+            translation -1.3755334950711377e-17 -1.305899845670988e-14 -4.704136741390248e-07
+            rotation -2.647132389260989e-08 0.00562030879115351 0.9999842059398196 9.423049461445317e-06
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position -0.7854030404452056
+                  axis 0 1 0
+                  anchor 0.04 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "L2_1"
+                    maxTorque 50
+                  }
+                ]
+                endPoint Solid {
+                  translation 0.06828413435233024 0 0.028284408141931373
+                  rotation 0 -1 0 0.7854030404452054
+                  children [
+                    DEF L2_Joint1 Pose {
+                      translation 0.04 0 0
+                      rotation 1 0 0 -1.5707996938995747
+                      children [
+                        Shape {
+                          appearance Appearance {
+                            material Material {
+                            }
+                          }
+                          geometry Cylinder {
+                            height 0.015
+                            radius 0.01
+                          }
+                        }
+                      ]
+                    }
+                    HingeJoint {
+                      jointParameters HingeJointParameters {
+                        position 2.0943900159822206
+                        axis 0 1 0
+                        anchor 0.04 0 0
+                      }
+                      device [
+                        RotationalMotor {
+                          name "L2_2"
+                          maxTorque 50
+                        }
+                      ]
+                      endPoint Solid {
+                        translation 0.010000264374435974 0 -0.05196167686282137
+                        rotation 0 1 0 2.0943900159822206
+                        children [
+                          DEF L2_Link2 Shape {
+                            appearance Appearance {
+                              material Material {
+                                diffuseColor 0.333333 0.333333 0.498039
+                              }
+                            }
+                            geometry Box {
+                              size 0.12 0.01 0.01
+                            }
+                          }
+                        ]
+                        boundingObject USE L2_Link2
+                        physics Physics {
+                          density -1
+                          mass 1
+                        }
+                      }
+                    }
+                    DEF L2_Link1 Shape {
+                      appearance Appearance {
+                        material Material {
+                        }
+                      }
+                      geometry Box {
+                        size 0.08 0.01 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE L2_Link1
+                  physics Physics {
+                    density -1
+                    mass 1
+                  }
+                }
+              }
+              DEF L2_Joint1 Pose {
+                translation 0.04 0 0
+                rotation 1 0 0 -1.5708003061004252
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Cylinder {
+                      height 0.015
+                      radius 0.01
+                    }
+                  }
+                ]
+              }
+              DEF L2_Link0 Pose {
+                translation 0.02 0 0
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.04 0.01 0.01
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(3)"
+            boundingObject USE L2_Link0
+            physics Physics {
+              density -1
+              mass 1
+            }
+          }
+        }
+        DEF L2_Joint0 Pose {
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.01
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF R0 Pose {
+      translation 0.1 -0.05 0.1
+      rotation 0 0 1 -1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            position 1.1038826306540322e-05
+            axis 0 0 1
+          }
+          device [
+            RotationalMotor {
+              name "R0_0"
+              maxTorque 50
+            }
+          ]
+          endPoint Solid {
+            translation 1.402096751082055e-17 -1.3072875962181801e-14 -4.704136741667809e-07
+            rotation -1.7311722338851885e-08 0.003148882644835317 0.9999950422567548 1.1000610051539299e-05
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position -0.7854030131561958
+                  axis 0 1 0
+                  anchor 0.04 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "R0_1"
+                    maxTorque 50
+                  }
+                ]
+                endPoint Solid {
+                  translation 0.06828411142457658 0 0.028284431069607423
+                  rotation 0 -1 0 0.7854030131561955
+                  children [
+                    DEF R0_Joint1 Pose {
+                      translation 0.04 0 0
+                      rotation 1 0 0 -1.5707996938995747
+                      children [
+                        Shape {
+                          appearance Appearance {
+                            material Material {
+                            }
+                          }
+                          geometry Cylinder {
+                            height 0.015
+                            radius 0.01
+                          }
+                        }
+                      ]
+                    }
+                    HingeJoint {
+                      jointParameters HingeJointParameters {
+                        position 2.0943900412745142
+                        axis 0 1 0
+                        anchor 0.04 0 0
+                      }
+                      device [
+                        RotationalMotor {
+                          name "R0_2"
+                          maxTorque 50
+                        }
+                      ]
+                      endPoint Solid {
+                        translation 0.010000243791630944 0 -0.051961664979472265
+                        rotation 0 1 0 2.0943900412745142
+                        children [
+                          DEF R0_Link2 Shape {
+                            appearance Appearance {
+                              material Material {
+                                diffuseColor 0 1 1
+                              }
+                            }
+                            geometry Box {
+                              size 0.12 0.01 0.01
+                            }
+                          }
+                        ]
+                        boundingObject USE R0_Link2
+                        physics Physics {
+                          density -1
+                          mass 1
+                        }
+                      }
+                    }
+                    DEF R0_Link1 Shape {
+                      appearance Appearance {
+                        material Material {
+                        }
+                      }
+                      geometry Box {
+                        size 0.08 0.01 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE R0_Link1
+                  physics Physics {
+                    density -1
+                    mass 1
+                  }
+                }
+              }
+              DEF R0_Joint1 Pose {
+                translation 0.04 0 0
+                rotation 1 0 0 -1.5708003061004252
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Cylinder {
+                      height 0.015
+                      radius 0.01
+                    }
+                  }
+                ]
+              }
+              DEF R0_Link0 Pose {
+                translation 0.02 0 0
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.04 0.01 0.01
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(4)"
+            boundingObject USE R0_Link0
+            physics Physics {
+              density -1
+              mass 1
+            }
+          }
+        }
+        DEF R0_Joint0 Pose {
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.01
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF R1 Pose {
+      translation 0 -0.05 0.1
+      rotation 0 0 1 -1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            position 1.1040174454948815e-05
+            axis 0 0 1
+          }
+          device [
+            RotationalMotor {
+              name "R1_0"
+              maxTorque 50
+            }
+          ]
+          endPoint Solid {
+            translation 1.4020848810007425e-17 -1.3060430480599799e-14 -4.7041367416678055e-07
+            rotation -1.734605175438436e-08 0.003154747781095789 0.9999950237708372 1.1002022893573577e-05
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position -0.7854030145567025
+                  axis 0 1 0
+                  anchor 0.04 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "R1_1"
+                    maxTorque 50
+                  }
+                ]
+                endPoint Solid {
+                  translation 0.06828411138173882 0 0.02828443111244472
+                  rotation 0 -1 0 0.7854030145567025
+                  children [
+                    DEF R1_Joint1 Pose {
+                      translation 0.04 0 0
+                      rotation 1 0 0 -1.5707996938995747
+                      children [
+                        Shape {
+                          appearance Appearance {
+                            material Material {
+                            }
+                          }
+                          geometry Cylinder {
+                            height 0.015
+                            radius 0.01
+                          }
+                        }
+                      ]
+                    }
+                    HingeJoint {
+                      jointParameters HingeJointParameters {
+                        position 2.0943900385658702
+                        axis 0 1 0
+                        anchor 0.04 0 0
+                      }
+                      device [
+                        RotationalMotor {
+                          name "R1_2"
+                          maxTorque 50
+                        }
+                      ]
+                      endPoint Solid {
+                        translation 0.01000024393030485 0 -0.05196166505953479
+                        rotation 0 1 0 2.0943900385658702
+                        children [
+                          DEF R1_Link2 Shape {
+                            appearance Appearance {
+                              material Material {
+                                diffuseColor 0.333333 0.333333 0.498039
+                              }
+                            }
+                            geometry Box {
+                              size 0.12 0.01 0.01
+                            }
+                          }
+                        ]
+                        boundingObject USE R1_Link2
+                        physics Physics {
+                          density -1
+                          mass 1
+                        }
+                      }
+                    }
+                    DEF R1_Link1 Shape {
+                      appearance Appearance {
+                        material Material {
+                        }
+                      }
+                      geometry Box {
+                        size 0.08 0.01 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE R1_Link1
+                  physics Physics {
+                    density -1
+                    mass 1
+                  }
+                }
+              }
+              DEF R1_Joint1 Pose {
+                translation 0.04 0 0
+                rotation 1 0 0 -1.5708003061004252
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Cylinder {
+                      height 0.015
+                      radius 0.01
+                    }
+                  }
+                ]
+              }
+              DEF R1_Link0 Pose {
+                translation 0.02 0 0
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.04 0.01 0.01
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(5)"
+            boundingObject USE R1_Link0
+            physics Physics {
+              density -1
+              mass 1
+            }
+          }
+        }
+        DEF R1_Joint0 Pose {
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.01
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF R2 Pose {
+      translation -0.1 -0.05 0.1
+      rotation 0 0 1 -1.5708
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            position 1.1041523944180915e-05
+            axis 0 0 1
+          }
+          device [
+            RotationalMotor {
+              name "R2_0"
+              maxTorque 50
+            }
+          ]
+          endPoint Solid {
+            translation 1.4021002776702718e-17 -1.3072875962143879e-14 -4.7041367416677997e-07
+            rotation -1.735959795214277e-08 0.0031568163920785105 0.9999950172427192 1.1003395194983549e-05
+            children [
+              HingeJoint {
+                jointParameters HingeJointParameters {
+                  position -0.7854030159572343
+                  axis 0 1 0
+                  anchor 0.04 0 0
+                }
+                device [
+                  RotationalMotor {
+                    name "R2_1"
+                    maxTorque 50
+                  }
+                ]
+                endPoint Solid {
+                  translation 0.0682841113389 0 0.028284431155246797
+                  rotation 0 -1 0 0.7854030159572344
+                  children [
+                    DEF R2_Joint1 Pose {
+                      translation 0.04 0 0
+                      rotation 1 0 0 -1.5707996938995747
+                      children [
+                        Shape {
+                          appearance Appearance {
+                            material Material {
+                            }
+                          }
+                          geometry Cylinder {
+                            height 0.015
+                            radius 0.01
+                          }
+                        }
+                      ]
+                    }
+                    HingeJoint {
+                      jointParameters HingeJointParameters {
+                        position 2.094390035857162
+                        axis 0 1 0
+                        anchor 0.04 0 0
+                      }
+                      device [
+                        RotationalMotor {
+                          name "R2_2"
+                          maxTorque 50
+                        }
+                      ]
+                      endPoint Solid {
+                        translation 0.010000244068992387 0 -0.05196166513960518
+                        rotation 0 1 0 2.094390035857162
+                        children [
+                          DEF R2_Link2 Shape {
+                            appearance Appearance {
+                              material Material {
+                                diffuseColor 0 1 1
+                              }
+                            }
+                            geometry Box {
+                              size 0.12 0.01 0.01
+                            }
+                          }
+                        ]
+                        boundingObject USE R2_Link2
+                        physics Physics {
+                          density -1
+                          mass 1
+                        }
+                      }
+                    }
+                    DEF R2_Link1 Shape {
+                      appearance Appearance {
+                        material Material {
+                        }
+                      }
+                      geometry Box {
+                        size 0.08 0.01 0.01
+                      }
+                    }
+                  ]
+                  boundingObject USE R2_Link1
+                  physics Physics {
+                    density -1
+                    mass 1
+                  }
+                }
+              }
+              DEF R2_Joint1 Pose {
+                translation 0.04 0 0
+                rotation 1 0 0 -1.5708003061004252
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Cylinder {
+                      height 0.015
+                      radius 0.01
+                    }
+                  }
+                ]
+              }
+              DEF R2_Link0 Pose {
+                translation 0.02 0 0
+                children [
+                  Shape {
+                    appearance Appearance {
+                      material Material {
+                      }
+                    }
+                    geometry Box {
+                      size 0.04 0.01 0.01
+                    }
+                  }
+                ]
+              }
+            ]
+            name "solid(6)"
+            boundingObject USE R2_Link0
+            physics Physics {
+              density -1
+              mass 1
+            }
+          }
+        }
+        DEF R2_Joint0 Pose {
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                }
+              }
+              geometry Cylinder {
+                height 0.015
+                radius 0.01
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF body Pose {
+      translation 0 0 0.1
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0 0.3 1
+            }
+          }
+          geometry Box {
+            size 0.2 0.1 0.01
+          }
+        }
+      ]
+    }
+  ]
+  name "hexa"
+  boundingObject USE body
+  physics Physics {
+    density -1
+    mass 10
+  }
+  recognitionColors [
+    0 0 0
+  ]
+  controller "col"
+}
